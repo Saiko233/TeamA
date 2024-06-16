@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンバー</title>
+    <link rel="stylesheet" href="projects/teamA/css/reset.css">
+    <link rel="stylesheet" href="projects/teamA/css/style.css">
+    <script src="quiz.js"></script>
+  </head>
+  <body>
+    <!--ヘッダー-->
+    <header class="header">
+      <div class="heading">
+        <a href="index.html">
+          <img src="image/logo.jpeg" alt="地元に帰りたい" class="logo">
+        </a>
+      </div>
+      <!--ヘッダーリスト-->
+      <div class="navbar">
+        <ul class="nav-lists">
+          <li class="nav-lists__list"><a href="gourmet.html">グルメ</a></li>
+          <li class="nav-lists__list"><a href="spot.html">スポット</a></li>
+          <li class="nav-lists__list"><a href="member.html">メンバー</a></li>
+          <li class="nav-lists__list"><a href="history.html">歴史</a></li>
+        </ul>
+      </div>
+    </header>
+
+<div class="quiz-body">
+    <div class="quizzes-container">
+        <h1>クイズ</h1>
+        <div class="quiz-container">
+            <h2>第1問</h2>
+            <p>１問目の質問文</p>
+            <form id="quiz-1">
+                <input name="answer" type="radio" value="a">選択肢</input>
+                <input name="answer" type="radio" value="b">選択肢</input>
+                <input name="answer" type="radio" value="c">選択肢</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz1();">回答する</button>
+        </div>
+
+        <div class="quiz-container">
+            <h2>第2問</h2>
+            <p>２問目の質問文</p>
+            <form id="quiz-2">
+                <input name="answer" type="radio" value="a">選択肢</input>
+                <input name="answer" type="radio" value="b">選択肢</input>
+                <input name="answer" type="radio" value="c">選択肢</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz2();">回答する</button>
+        </div>
+
+        <div class="quiz-container">
+            <h2>第3問</h2>
+            <p>３問目の質問文</p>
+            <form id="quiz-1">
+                <input name="answer" type="radio" value="a">選択肢</input>
+                <input name="answer" type="radio" value="b">選択肢</input>
+                <input name="answer" type="radio" value="c">選択肢</input>
+            </form>
+            <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>
+        </div>
+
+        <div id="score-container">
+            <p id="score-message"></p>
+        </div>
+        <button class="btn-score" type="button" onclick="showScore();">合計得点をみる</button>
+    </div>
+</div>
+
+
+      <!-- フッター -->
+      <footer class="footer">
+        <div class="copyright">TEAM_A</div>
+    </footer>
+    
+  </body>
+</html>

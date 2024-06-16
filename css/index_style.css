@@ -1,0 +1,105 @@
+/* .slide-items {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+  }
+
+  .slide-items img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+  /* ヘッダー全体のスタイル */
+.header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: #EAF2FD;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* ロゴのスタイル */
+  .logo {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 80%;
+    height: auto;
+  }
+  
+  /* ナビゲーションバーのスタイル */
+  .navbar {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-lists {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-lists__list {
+    margin: 10px 0;
+  }
+  
+  .nav-lists__list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #404E1B;
+    font-size: 1.7em;
+    display: block;
+    padding: 20px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-lists__list a:hover {
+    color: #007BFF;
+  }
+
+  body{
+    background-color: #fcf7e6;
+  }
+  
+  /*グルメのスタイル*/
+  .gourmet_title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 75%;
+  }
+
+  .gourmet_title h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+  }
+
+  .gourmet_img{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .gourmet_item{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .gourmet_img p{
+    
+  }

@@ -1,0 +1,28 @@
+/* メインコンテンツのスタイル */
+.contents {
+    margin-left: 25%; /* ヘッダーの幅分のマージンを追加 */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 画像グリッドのスタイル */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
