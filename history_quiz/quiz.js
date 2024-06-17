@@ -1,3 +1,24 @@
+let score = 0;
+
+function showScore(){
+  const totalScore = document.getElementById('score-message');
+    
+  if(score === 3) {
+    totalScore.innerHTML = score + "点：満点！おめでとう！"
+  } else if(score === 2) {
+    totalScore.innerHTML = score + "点：あともう一息！";
+  } else if(score === 1) {
+    totalScore.innerHTML = score + "点：まあまあ";
+  } else {
+    totalScore.innerHTML = score + "点：残念";
+  }   
+}
+
+/**
+1問目の正解はB
+2問目の正解はB
+3問目の正解はC
+**/
 const correct = '正解です';
 const incorrect = '不正解です';
 
@@ -28,14 +49,14 @@ function answerQuiz2(){
   const quiz_2 = document.getElementById('quiz-2');
   const select = '2問目：' + quiz_2.answer.value + 'を選択しました';
 
-  // 正解はA
   if (quiz_2.answer.value == 'a') {
+    console.log(select);
+    console.log(incorrect);
+    // 正解はB
+  } else if (quiz_2.answer.value == 'b') {    
     score++;
     console.log(select);
     console.log(correct);
-  } else if (quiz_2.answer.value == 'b') {    
-    console.log(select);
-    console.log(incorrect);
   } else if (quiz_2.answer.value == 'c') {
     console.log(select);
     console.log(incorrect);

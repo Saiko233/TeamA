@@ -1,7 +1,79 @@
-.title_logo{
-    
+.warpper {
+  width: 75%;
+  height: 200px;
+  text-align: center;
+
 }
 
-.topics{
+.wap {
+  width: 1000px;
+  height: 1000px;
+  background-color: white;
+  margin: 0 auto;
+  border: 1px solid black;
 
 }
+
+.contents{
+display: flex;
+}
+
+.background{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+color: #C8A46A;
+font-size: 40px;
+line-height: 85px;
+}
+
+h2{
+color: #FF0000;
+font-size: 35px;
+line-height: 85px;
+}
+
+p{
+color: #454545;
+font-size: 15px;
+line-height: 25px;
+text-align: left;
+display: inline-block;
+}
+
+.content_left{
+-ms-writing-mode: tb-rl;
+writing-mode: vertical-lr;
+text-orientation: upright;
+flex-grow: 1;
+}
+
+.content_right{
+flex-grow: 1;
+}
+
+.nav_tab {
+  display: flex;
+}
+
+.tab {
+  background-color: #faf4eb;
+  width: 75%;
+  height: 30px;
+  border: 1px solid #C8A46A;
+  cursor: pointer!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

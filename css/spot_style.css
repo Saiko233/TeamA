@@ -1,74 +1,64 @@
-/*タブ切り替え全体のスタイル*/
-.tabs {
-  margin-top: 50px;
-  padding-bottom: 40px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 700px;
-  margin: 0 auto;
+.zenntai{
+  background-color: bisque;
+  width: 75vw;
+  height: 100vh;
+  
+}
+.tait {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.logo2{
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+}
+.LeftContent{
+  display: flex;
+  min-height: 100vh;
+  /*margin: 15px 0 30px 0;*/
+  margin-right: 25%;
+  object-fit: cover;
 }
 
-/*タブのスタイル*/
-.tab_item {
-  width: calc(100%/3);
-  height: 50px;
-  background-color: #d9d9d9;
-  line-height: 50px;
-  font-size: 16px;
-  text-align: center;
-  color: #565656;
-  display: block;
-  float: left;
-  text-align: center;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-.tab_item:hover {
-  opacity: 0.75;
-}
+.fixed-siz {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  position: fixed;
+          top: 10px;
+          right: 10px;
+          width: 100px;
+          height: auto;
 
-/*ラジオボタンを全て消す*/
-input[name="tab_item"] {
-  display: none;
 }
-
-/*タブ切り替えの中身のスタイル*/
-.tab_content {
-  display: none;
-  padding: 40px 40px 0;
-  clear: both;
-  overflow: hidden;
+.nav-lists2 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center; 
+  padding: 25px; 
 }
-
-
-/*選択されているタブのコンテンツのみを表示*/
-#tab_1:checked ~ #tab_1_content,
-#tab_2:checked ~ #tab_2_content,
-#tab_3:checked ~ #tab_3_content {
-  display: block;
+li a{
+  text-decoration: none;
+  margin-right: 100px;
 }
-
-/*選択されているタブのスタイルを変える*/
-.tabs input:checked + .tab_item {
-  background-color: #eed603;
-  color: #fff;
+.wrap_1{
+  border-radius: 15%;
+  width: 45%;
+  height: 45%;
 }
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.image-gallery figure {
-    flex: 1 1 calc(33.333% - 10px);
-    box-sizing: border-box;
-    margin: 0;
-}
-.image-gallery img {
-    max-width: 100%;
-    height: auto;
-}
-.image-gallery figcaption {
-    text-align: center;
-    font-size: 0.9em;
-    color: #555;
+.wrap_right{
+  writing-mode: vertical-rl;
+  margin: 0 0 0 auto;
 }

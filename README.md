@@ -1,8 +1,8 @@
 ## 実装環境
 
-local 環境でコーディング、テスト
-live share でコードをマージする。
-discord で話し合う
+Local 環境でコーディング、テスト
+Live share でコードをマージする。
+Discord で話し合う
 
 ## 作業順番
 
@@ -15,6 +15,18 @@ HTML
 CSS
 JavaScript
 jQuery
+
+## スケジュール
+
+プランニング: 半日
+要件定義、デザイン設計: ２日
+html 実装: 1-2 日
+機能実装: 3-5 日
+
+## リスク管理
+
+リスク: メンバーそれぞれ技術的な問題、予想より実装が長引く
+対策:　最低限の html、css 各自完成して、機能は蔡が実装する
 
 ## ディレクトリ構造
 
@@ -30,7 +42,7 @@ TeamA
   │    ├─ gourmet.css
   │    ├─ spot.css
   │    ├─ members.css
-  │    └─ history.html
+  │    └─ history.css
   ├── js
   │    ├─ main.js
   │    └─ quiz.js

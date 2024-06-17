@@ -1,67 +1,222 @@
+.zentai {
+  width: 75vw;
+  height: 100vh;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .big_title {
-    height: 10vh;
-    width: 100vw;
-    background-color:green;
-    font-size: 100px;
-    color: white;
-    padding: 10px auto;
+  height: 15vh;
+  background-color:green;
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.background img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .title {
-    font-size: 30px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.ul {
-    display:flex;
-}
+/* .area {
+  margin-top: -10px;
+  flex-wrap: wrap;
+  display: flex;
+} */
 
-.li {
-    list-style: none;
-    padding: 10px auto;
+.quiz_button {
+  display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	background: #27acd9;
+	color: #fff;
+	transition: 0.5s;
 }
+ 
+.tab_class {
+  width: calc(100%/6);
+  height: 50px;
+  background-color: darkgrey;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+}
+ 
+input[name="tab_name"] {
+  display: none;
+}
+ 
+input:checked + .tab_class {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+ 
+/* .content_class {
+  margin: auto;
+  display: none;
+  width: 90%;
+}
+ 
+input:checked + .tab_class + .content_class {
+  display: block;
+} */
 
 .hr1 {
-    border-top: 3px solid #000;
-    width: 70%;
+  border-top: 3px solid #000;
+  width: 100%;
 }
 
 .content {
-    display: flex;
+  display: flex;
 }
 
-.comment {
-
+.wrap {
+width: 75%;
+background-color: aqua;
+margin: 0 auto;
 }
+
+.tab-group {
+  /* タブ全体の幅 */
+ margin-top: -3px;
+  list-style: none;
+  text-align: center;
+}
+
+.tab-button {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  /* カーソル形状を指先にする */
+  cursor: pointer;
+}
+
+.tab-button .is-active {
+  background: #4bab80;
+  border: 2px solid #4bab80;
+  color: #FFF;
+}
+
+.tab {
+  width: calc(100% / 6);
+  border: 2px solid #ccebdc;
+  padding: 8px;
+  border-bottom: none;
+}
+
+.tab-contents {
+  width: 80%;
+  margin: auto;
+  border-top: none;
+  background: #ccebdc;
+}
+
+.content {
+  display: none;
+  padding: 8px;
+  text-align: left;
+}
+
+.content.is-display {
+  display: block;
+  border: 2px solid #4bab80;
+ 
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width:100%;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead {
+  background-color: rgb(228 240 245);
+  
+}
+
+th {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  width: 30%;
+}
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  width: 70%;
+}
+
+td:last-of-type {
+  
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+
+/**この下からhistory_quiz**/
 
 .quiz-body {
-    font-family: serif;
-    text-align: center;
+  width: 75vw;
+  font-family: serif;
+  text-align: center;
 }
 
 .quizzes-container {
-    width: 400px;
-    margin: 50px auto;
-  }
-  
-  .quiz-container {
-    border-bottom:1px solid black;
-    padding-bottom: 20px;
-  }
-  
-  .btn {
-    margin-top: 20px;
-    font-family: serif;
-    background-color: white;
-  }
-  
-  #score-container {
-    border: 1px solid black;
-    height: 50px;
-  }
-  
-  .btn-score {
-    display: block;
-    margin: 20px auto;
-    font-family: serif;
-    background-color: white;
-  }
+  width: 500px;
+  margin: 50px auto;
+}
+
+.quiz-container {
+  border-bottom:1px solid black;
+  padding: 20px 0 20px 0;
+}
+
+.btn {
+  margin-top: 20px;
+  font-family: serif;
+  background-color: white;
+}
+
+#score-container {
+  border: 1px solid black;
+  height: 50px;
+  padding-top: 15px;
+}
+
+.btn-score {
+  display: block;
+  margin: 20px auto;
+  font-family: serif;
+  background-color: white;
+}

@@ -1,18 +1,152 @@
+/* ヘッダー全体のスタイル */
+.header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: #EAF2FD;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* ロゴのスタイル */
+.logo {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+/* ナビゲーションバーのスタイル */
+.navbar {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-lists {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-lists__list {
+    margin: 10px 0;
+}
+
+.nav-lists__list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #404E1B;
+    font-size: 1.7em;
+    display: block;
+    padding: 20px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-lists__list a:hover {
+    color: #007BFF;
+}
+
+/*トップコンテンツ（画像）*/
+.top-contents{
+    margin-right: 25%;
+    height: 100vh; /* 画面の高さを100%に設定 */
+    display: grid;
+    place-items: center; /* コンテンツを中央に配置 */
+    position: relative;
+}
+
+.first-view{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.top-image{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(87, 206, 219);
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/*セカンド画像*/
+.middle-contents {
+    background-color: #FAF4EB;
+    margin-right: 25%; 
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* 画像表示用に高さを設定 */
+}
+
+.second-image {
+    max-width: 100%;
+    max-height: 100%;
+    /* object-fit: cover; 画像がコンテナに収まるように調整 */
+}
+
+
+
+
 /* メインコンテンツのスタイル */
 .contents {
-    margin-left: 25%; /* ヘッダーの幅分のマージンを追加 */
+    background-color:#FAF4EB;
+    
+    height: 800px;
+    margin-right: 25%;   /* ヘッダーの幅分のマージンを調整 */
     padding: 20px;
     box-sizing: border-box;
 }
 
+.contents-theme {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theme-text {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: #333;
+}
+
 /* 画像グリッドのスタイル */
 .image-grid {
+    background-color: #FAF4EB;
+    margin:  100px auto;
+    /*margin: 100px 0px 0px 200px;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
     align-items: center;
     text-align: center;
+    max-width: 900px; /* グリッド全体の幅を調整 */
+    /*margin: 0 auto; /* 中央揃え */
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 追加: トランジションエフェクト */
+    position: relative; /* 追加: 相対的な位置指定 */
 }
 
 .image-item img {
@@ -25,4 +159,47 @@
     margin-top: 10px;
     font-size: 1.2em;
     color: #333;
+}
+
+/* 画像のホバーエフェクト */
+.image-item:hover {
+    transform: translateY(-10px); /* 追加: ホバー時に画像を少し上に移動 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* 追加: ホバー時に影を追加 */
+}
+
+.secret-contents{
+    position: absolute; /* 追加: 絶対的な位置指定 */
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #FFEC5A;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* 追加: ホバー時のトランジション */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.secret-contents p{
+    font-weight: bold;
+    color:#333;
+    font-size: 1.2em;
+    display: block;
+    padding: 1px 0;
+    transition: color 0.3s ease;
+}
+
+.secret-contents p1{
+    font-weight: bold;
+    color:#333;
+    font-size: 1.8em;
+    display: block;
+    padding: 1px 0;
+    transition: color 0.3s ease;
+}
+
+.image-item:hover .secret-contents {
+    opacity: 0.85; /* ホバー時に表示 */
 }
