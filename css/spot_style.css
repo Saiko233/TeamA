@@ -1,8 +1,7 @@
-.zenntai{
+.zenntai {
   background-color: bisque;
   width: 75vw;
   height: 100vh;
-  
 }
 .tait {
   position: absolute;
@@ -16,15 +15,14 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
-.logo2{
+.logo2 {
   height: 60%;
   position: absolute;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
-
 }
-.LeftContent{
+.LeftContent {
   display: flex;
   min-height: 100vh;
   /*margin: 15px 0 30px 0;*/
@@ -37,28 +35,37 @@
   height: 100%;
   text-align: right;
   position: fixed;
-          top: 10px;
-          right: 10px;
-          width: 100px;
-          height: auto;
-
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: auto;
 }
 .nav-lists2 {
   font-size: 50px;
   display: flex;
-  justify-content: center; 
-  padding: 25px; 
+  justify-content: center;
+  padding: 25px;
 }
-li a{
+li a {
   text-decoration: none;
   margin-right: 100px;
 }
-.wrap_1{
+.wrap_1 {
   border-radius: 15%;
   width: 45%;
   height: 45%;
 }
-.wrap_right{
+.wrap_right {
   writing-mode: vertical-rl;
   margin: 0 0 0 auto;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
