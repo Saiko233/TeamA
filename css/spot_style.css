@@ -1,5 +1,5 @@
 .zenntai {
-  background-color: bisque;
+  background-color: blue;
   width: 75vw;
   height: 100vh;
 }
@@ -25,7 +25,7 @@
 .LeftContent {
   display: flex;
   min-height: 100vh;
-  /*margin: 15px 0 30px 0;*/
+  margin: 15px 0 30px 0;
   margin-right: 25%;
   object-fit: cover;
 }

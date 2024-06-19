@@ -16,140 +16,134 @@
     object-fit: cover;
   } */
 
-
-  /* ヘッダー全体のスタイル */
+/* ヘッダー全体のスタイル */
 .header {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 25%;
-    height: 100vh;
-    background-color: #EAF2FD;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    box-sizing: border-box;
-  }
-  
-  /* ロゴのスタイル */
-  .logo {
-    display: block;
-    margin: 0 auto 30px auto;
-    max-width: 80%;
-    height: auto;
-  }
-  
-  /* ナビゲーションバーのスタイル */
-  .navbar {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .nav-lists {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .nav-lists__list {
-    margin: 10px 0;
-  }
-  
-  .nav-lists__list a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #404E1B;
-    font-size: 1.7em;
-    display: block;
-    padding: 20px 0;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-lists__list a:hover {
-    color: #007BFF;
-  }
-
-  body{
-    background-color: #fcf7e6;
-  }
-  
-  
-  /*グルメのスタイル*/
-  .index_title{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 75%;
-  }
-
-  .index_title h1{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    font-size: 50px;
-  }
-
-  .gourmet_img{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 75%;
-  }
-  .gourmet_img img{
-    height: 140px;
-    width: 140px;
-    object-fit: cover;
-    display: block;
-  }
-  
-  /*文字の回り込みの設定*/
-.imgleft
-{
-float:left;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 25%;
+  height: 100vh;
+  background-color: #eaf2fd;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
-.imgright
-{
-float:right;
+
+/* ロゴのスタイル */
+.logo {
+  display: block;
+  margin: 0 auto 30px auto;
+  max-width: 80%;
+  height: auto;
+}
+
+/* ナビゲーションバーのスタイル */
+.navbar {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-lists {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-lists__list {
+  margin: 10px 0;
+}
+
+.nav-lists__list a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #404e1b;
+  font-size: 1.7em;
+  display: block;
+  padding: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-lists__list a:hover {
+  color: #007bff;
+}
+
+body {
+  background-color: #fcf7e6;
+}
+
+/*グルメのスタイル*/
+.index_title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 75%;
+}
+
+.index_title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.gourmet_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+.gourmet_img img {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/*文字の回り込みの設定*/
+.imgleft {
+  float: left;
+}
+.imgright {
+  float: right;
 }
 /*テキストの中央揃え*/
-.textcenter
-{
-text-align: center;
-font-size: 25px;
+.textcenter {
+  text-align: center;
+  font-size: 25px;
 }
 /*文字の回り込みの解除*/
-.clear
-{
-clear:both;
+.clear {
+  clear: both;
 }
 
 /*画像ごとのランダムマージン設定*/
-.gourmet_item1{
- margin: 30px;
- margin-left: 50px;
- margin-top: 0;
+.gourmet_item1 {
+  margin: 30px;
+  margin-left: 50px;
+  margin-top: 0;
 }
-.gourmet_item2{
+.gourmet_item2 {
   margin: 90px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.gourmet_item3{
+.gourmet_item3 {
   margin: 40px;
 }
-.gourmet_item4{
+.gourmet_item4 {
   margin: 70px;
   margin-top: 0;
 }
-.gourmet_item5{
+.gourmet_item5 {
   margin: 40px;
 }
-.gourmet_item6{
+.gourmet_item6 {
   margin: 60px;
 }
-.text_1{
+.text_1 {
   width: 75%;
   display: flex;
   justify-content: center;
@@ -158,15 +152,15 @@ clear:both;
   margin-bottom: 30px;
   position: absolute;
 }
-.gourmet_link{
+.gourmet_link {
   text-align: center;
   position: relative;
 }
-.gourmet_footer{
+.gourmet_footer {
   margin-bottom: 60px;
 }
 /*****************************/
-.spot_contents{
+.spot_contents {
   width: 75%;
   display: flex;
   justify-content: center;
@@ -174,7 +168,7 @@ clear:both;
   margin-top: 150px;
   margin-bottom: 200px;
 }
-.spot_flame{
+.spot_flame {
   height: 200px;
   width: 180px;
   display: flex;
@@ -182,55 +176,61 @@ clear:both;
   align-items: center;
   flex-direction: column;
 }
-.spot_flame img{
+.spot_flame img {
   object-fit: cover;
   height: 120px;
   width: 120px;
   border-radius: 50%;
 }
-.spot_flame p{
+.spot_flame p {
   margin-top: 20px;
   width: 120px;
   word-break: break-all;
   display: flex;
   justify-content: center;
 }
-.spot_footer{
+.spot_footer {
   margin-bottom: 60px;
 }
-.member_contents{
+.member_contents {
   width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.member_contents a{
+.member_contents a {
   padding-top: 100px;
 }
-.member_flame{
+.member_flame {
   width: 140px;
   height: 240px;
   margin: 20px;
   margin-bottom: 130px;
   margin-top: 100px;
 }
-.member_flame img{
+.member_flame img {
   object-fit: cover;
   width: 140px;
   height: 240px;
 }
-.member_flame p{
+.member_flame p {
   word-break: break-all;
 }
-.m_img_1{
+.m_img_1 {
   margin-top: 0px;
 }
-.m_img_2{
+.m_img_2 {
   margin-top: 50px;
 }
-.m_img_3{
+.m_img_3 {
   margin-top: 300px;
 }
-.member_footer{
+.member_footer {
   margin-top: 80px;
+}
+
+.slide {
+  width: 100vh;
+  object-fit: cover;
+  margin: 0 auto;
 }

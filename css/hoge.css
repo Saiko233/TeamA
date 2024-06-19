@@ -1,0 +1,71 @@
+.main {
+  background-color: blue;
+  height: 5000px;
+  width: 75%;
+}
+
+.main-visual {
+  background-color: red;
+  height: 90vh;
+}
+
+.main-visual img {
+  height: 90vh;
+  width: 100%;
+}
+
+.tab-list {
+  height: 10vh;
+  background-color: orange;
+}
+
+.tab-list ul {
+  display: flex;
+}
+
+.wrap {
+  background-color: white;
+  height: 3000px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.contents {
+  background-color: yellow;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+}
+
+.content-l {
+  background-color: blueviolet;
+  width: 50%;
+}
+
+.content-r {
+  background-color: brown;
+  height: 100%;
+  width: 50%;
+  writing-mode: vertical-rl;
+}
+
+.content-top {
+  background-color: chartreuse;
+  height: 45vh;
+}
+
+.content-bottom {
+  background-color: cyan;
+  height: 30vh;
+  display: flex;
+}
+
+.bottom-l {
+  background-color: teal;
+  width: 50%;
+}
+
+.bottom-r {
+  background-color: cornflowerblue;
+  width: 50%;
+}
