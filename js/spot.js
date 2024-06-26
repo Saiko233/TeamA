@@ -14,7 +14,6 @@ $(function () {
   var topBtn = $("#page_top");
   topBtn.hide();
 
-  //ボタンの表示設定
   $(window).scroll(function () {
     if ($(this).scrollTop() > 800) {
       topBtn.fadeIn();
@@ -23,7 +22,7 @@ $(function () {
     }
   });
 
-  // ボタンをクリックしたら、スクロールして上に戻る
+  // top button
   topBtn.click(function () {
     $("body,html").animate(
       {

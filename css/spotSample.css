@@ -66,12 +66,13 @@
   /* height: 2000px; */
   width: 75%;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .contents {
   display: flex;
   height: 68.5vh;
+  margin: 50px 0;
   /* background-color: chartreuse; */
 }
 
@@ -149,7 +150,7 @@
   writing-mode: vertical-lr;
 }
 
-/* トップへ戻るボタン */
+/* top button */
 .page_top_btn {
   position: fixed;
   bottom: 10px;
