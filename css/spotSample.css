@@ -124,11 +124,11 @@
   width: 50%;
   /* background-color: skyblue; */
   writing-mode: vertical-rl;
-  padding: 10px;
+  padding: 10px 0;
+  flex-direction: column;
 }
 
 .content-r h2 {
-  margin: 5px;
   color: #ff50a4;
 }
 
@@ -139,4 +139,45 @@
 
 .leaf img {
   width: 100vw;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.content-reverse {
+  writing-mode: vertical-lr;
+}
+
+/* トップへ戻るボタン */
+.page_top_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 28%;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0.7em;
+  text-align: center;
+  background-color: rgb(255, 226, 0);
+  color: #47651d;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+}
+
+/* マウスオーバー時 */
+.page_top_btn:hover {
+  background: rgb(255, 226, 0, 0.8);
+  color: rgb(255, 255, 255, 0.8);
+  transition: 0.7s;
+}
+
+.content.white {
+  height: 500px;
+  background-color: #fff;
+}
+
+.content.gray {
+  height: 500px;
+  background-color: #eee;
 }
