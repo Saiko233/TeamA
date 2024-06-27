@@ -1,53 +1,63 @@
 /* ヘッダー全体のスタイル */
 .header {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 25%;
-    height: 100vh;
-    background-color: #EAF2FD;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    box-sizing: border-box;
-  }
-  
-  /* ロゴのスタイル */
-  .logo {
-    display: block;
-    margin: 0 auto 30px auto;
-    max-width: 80%;
-    height: auto;
-  }
-  
-  /* ナビゲーションバーのスタイル */
-  .navbar {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .nav-lists {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .nav-lists__list {
-    margin: 10px 0;
-  }
-  
-  .nav-lists__list a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #404E1B;
-    font-size: 1.7em;
-    display: block;
-    padding: 20px 0;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-lists__list a:hover {
-    color: #007BFF;
-  }
-  
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 25%;
+  height: 100vh;
+  background-color: #eaf2fd;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+/* ロゴのスタイル */
+.logo {
+  display: block;
+  margin: 0 auto 30px auto;
+  max-width: 80%;
+  height: auto;
+}
+
+/* ナビゲーションバーのスタイル */
+.navbar {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-lists {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-lists__list {
+  margin: 10px 0;
+}
+
+.nav-lists__list a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #404e1b;
+  font-size: 1.7em;
+  display: block;
+  padding: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-lists__list a:hover {
+  color: #007bff;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  height: 60px;
+  background-color: #eaf2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

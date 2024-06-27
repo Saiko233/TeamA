@@ -10,8 +10,9 @@ $(function () {
   });
 });
 
+// scroll
 $(function () {
-  var topBtn = $("#page_top");
+  let topBtn = $("#page_top");
   topBtn.hide();
 
   $(window).scroll(function () {
@@ -19,6 +20,12 @@ $(function () {
       topBtn.fadeIn();
     } else {
       topBtn.fadeOut();
+    }
+
+    if ($(this).scrollTop() > 4580) {
+      topBtn.css("bottom", "100px");
+    } else {
+      topBtn.css("bottom", "10px");
     }
   });
 
